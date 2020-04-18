@@ -4,7 +4,7 @@ import requests, time
 start = time.time()
 
 count = 100
-num = 2
+num = 5
 url = 'http://www.baidu.com'
 
 lock = threading.Lock()
