@@ -296,6 +296,20 @@ HTML由一系列的元素组成, 可以使用它来封装，标记内容的不�
     <button>Send my greetings</button>
   </div>
 </form>
+
+<form action="http://foo.com" method="get">
+  <div>
+    <label for="name-id">姓名</label>
+    <input name="name" id="name-id" value="jiam">
+  </div>
+  <div>
+    <label for="age-id">年龄</label>
+    <input name="age" id="age-id" value=18>
+  </div>
+  <div>
+    <button>提交</button>
+  </div>
+</form>
 ```
 * action 属性: 数据要提交到额url，在本例中，数据被发送到 —— http://foo.com
 * method属性:  提交数据使用的http方法 ，本例get
