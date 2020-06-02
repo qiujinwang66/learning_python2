@@ -14,7 +14,7 @@ Django 特点
 
 使用pip
 ```
-pip install django -i https://pypi.douban.com/simple
+pip install django==2.2.2 -i https://pypi.douban.com/simple
 ```
 
 验证django

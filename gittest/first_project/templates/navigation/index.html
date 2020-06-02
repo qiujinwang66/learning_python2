@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>Rango</title>
+  </head>
+  <body>
+    <h1>django说...</h1>
+    <div>大家好!</div>
+    <div>
+      {% if categories %}
+      <ul>
+        {% for category in categories %}
+        <!-- 修改下面这一行，添加链接 -->
+          <li>
+          <a href="/navigation/category/{{ category.slug }}">{{ category.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <strong>没有分类.</strong>
+      {% endif %}
+    </div>
+    <div>
+      <a href="/navigation/about/">关于</a><br />
+      <img src="{% static "images/django.jpg" %}" alt="Picture of django" />
+    </div>
+  </body>
+</html>
