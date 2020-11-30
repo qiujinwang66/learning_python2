@@ -12,7 +12,7 @@ class login_test(unittest.TestCase):
         driver = webdriver.Chrome()
         driver.set_window_position(25, 45)
         driver.set_window_size(1200, 800)
-        driver.get("http://10.96.94.211:3000/index.html#/")
+        driver.get("http://127.0.0.1:8888/index.html#/")
         driver.find_element_by_xpath('//*[@id="login-box"]/div/div/form/fieldset/label[2]/span/input').clear()
         driver.find_element_by_xpath('//*[@id="login-box"]/div/div/form/fieldset/label[2]/span/input').send_keys(
             'XXXXXXX')
