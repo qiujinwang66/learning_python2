@@ -1,6 +1,5 @@
 from django.db import models
 
-
 # Create your models here.
 
 class BaseTable(models.Model):
@@ -22,18 +21,5 @@ class Project(BaseTable):
     test_user = models.CharField('测试人员', max_length=100, null=False)
     dev_user = models.CharField('开发人员', max_length=100, null=False)
     publish_app = models.CharField('发布应用', max_length=100, null=False)
-    simple_desc = models.CharField('简要描述', max_length=100, null=True)
-    other_desc = models.CharField('其他信息', max_length=100, null=True)
-
-
-
-class Module(BaseTable):
-    class Meta:
-        verbose_name = '模块信息'
-        db_table = 'ModuleInfo'
-
-    module_name = models.CharField('模块名称', max_length=50, null=False)
-    belong_project = models.ForeignKey(Project, on_delete=models.CASCADE)
-    test_user = models.CharField('测试负责人', max_length=50, null=False)
     simple_desc = models.CharField('简要描述', max_length=100, null=True)
     other_desc = models.CharField('其他信息', max_length=100, null=True)
