@@ -76,18 +76,18 @@ WSGI_APPLICATION = 'hat.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+     }
     #'default': {
-#    'ENGINE': 'django.db.backends.mysql',
-#    'NAME': 'hat',  # 新建数据库名
-#    'USER': 'root',  # 数据库登录名
-#    'PASSWORD': '',  # 数据库登录密码
-#   'HOST': '127.0.0.1',  # 数据库所在服务器ip地址
-#   'PORT': '3306',  # 监听端口 默认3306即可
-# }
+    #'ENGINE': 'django.db.backends.mysql',
+    #'NAME': 'hat',  # 新建数据库名
+    #'USER': 'root',  # 数据库登录名
+    #'PASSWORD': '123',  # 数据库登录密码
+   #'HOST': '127.0.0.1',  # 数据库所在服务器ip地址
+   #'PORT': '3306',  # 监听端口 默认3306即可
+    # }
 }
 
 
